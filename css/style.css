@@ -22,3 +22,7 @@ i {
     vertical-align: middle;
     margin-left: .3125rem;
 }
+
+ul li {
+    margin-bottom: .5rem;
+}

@@ -33,6 +33,7 @@ div.container ul {
     border-radius: .625rem;
     color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 .todo {
@@ -51,8 +52,16 @@ div.container ul {
 }
 
 .add {
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
+}
+
+#add-list {
+    max-width: 80%;
+}
+
+.selected-list {
+    background-color: green;
 }
 
 @media screen and (min-width: 600px) {
