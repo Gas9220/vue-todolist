@@ -17,11 +17,24 @@ createApp({
                     isCompleted: false
                 },
             ],
+            newToDoText: ''
         }
     },
     methods: {
         removeTodo(index) {
             this.todoList.splice(index, 1) 
+        },
+        addNewTodo() {
+            if (this.newToDoText.trim() !== '') {
+                const newTodo = {
+                    text: this.newToDoText,
+                    isCompleted: false
+                }
+
+                this.todoList.push(newTodo)
+
+                this.newToDoText = ''
+            }  
         }
     }
 }).mount('#app')

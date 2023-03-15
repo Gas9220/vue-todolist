@@ -49,6 +49,11 @@ div.container ul {
     text-decoration: line-through;
 }
 
+.add {
+    width: 100%;
+    justify-content: center;
+}
+
 @media screen and (min-width: 600px) {
     .left {
         width: 15%;

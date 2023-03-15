@@ -46,6 +46,10 @@
             </div>
             <div class="container right">
                 <h3>My todos</h3>
+                <div class="d-flex add">
+                    <input v-model="newToDoText" type="text">
+                    <button @click="addNewTodo">Add</button>
+                </div>
                 <div class="d-flex todo-container">
                     <div v-for="(todo, index) in todoList" class="todo" :class="{completed: todo.isCompleted}">
                         {{ todo.text }}
