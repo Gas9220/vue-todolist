@@ -1,0 +1,21 @@
+#logo {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+nav {
+    border: .125rem solid #5B9AFF;
+}
+
+nav div ul {
+    list-style-type: none;
+}
+
+nav div ul li {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav div ul li:last-child {
+    margin-left: .9375rem;
+}

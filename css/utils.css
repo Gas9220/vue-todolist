@@ -1,0 +1,15 @@
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.p-1 {
+    padding: 1rem;
+}
