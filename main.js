@@ -21,10 +21,7 @@ createApp({
     },
     methods: {
         removeTodo(index) {
-            console.log(index)
-            console.log(this.todoList[index])
-            this.todoList = this.todoList.slice(index, 1) 
-            console.log(this.todoList)   
+            this.todoList.splice(index, 1) 
         }
     }
 }).mount('#app')
