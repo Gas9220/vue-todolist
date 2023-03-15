@@ -3,16 +3,50 @@
     height: calc(100vh - 4.375rem);
 }
 
+.todo-container {
+    flex-wrap: wrap;
+}
+
+.container h3 {
+    text-align: center;
+    color: #5B9AFF;
+    padding: .625rem;
+}
+
 .left {
     width: 30%;
 }
 
 .right {
     flex-grow: 1;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+div.container ul {
+    padding: .625rem;
+}
+
+.todo-list {
+    padding: .625rem;
+    background-color: #5B9AFF; 
+    border-radius: .625rem;
+    color: white;
+    text-align: center;
+}
+
+.todo {
+    text-align: center;
+    width: calc(100% / 3 - 1.25rem);
+    background-color: #5B9AFF;
+    margin: .625rem;
+    color: white;
+    padding: .625rem;
+    border-radius: .625rem;
 }
 
 @media screen and (min-width: 600px) {
     .left {
-        width: 10%;
+        width: 15%;
     }
 }
