@@ -16,3 +16,9 @@ a {
 ul {
     list-style-type: none;
 }
+
+i {
+    color: red;
+    vertical-align: middle;
+    margin-left: .3125rem;
+}

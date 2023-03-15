@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- CSS -->
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+
 </head>
 
 <body>
@@ -43,8 +47,9 @@
             <div class="container right">
                 <h3>My todos</h3>
                 <div class="d-flex todo-container">
-                    <div v-for="todo in todoList" class="todo" :class="{completed: todo.isCompleted}">
+                    <div v-for="(todo, index) in todoList" class="todo" :class="{completed: todo.isCompleted}">
                         {{ todo.text }}
+                        <i class="fa-solid fa-xmark" @click="removeTodo(index)"></i>
                     </div>
                 </div>
             </div>
