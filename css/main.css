@@ -1,0 +1,18 @@
+.container {
+    border: .125rem solid #5B9AFF;
+    height: calc(100vh - 4.375rem);
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .left {
+        width: 10%;
+    }
+}
