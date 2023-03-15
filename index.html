@@ -51,7 +51,7 @@
                     <button @click="addNewTodo">Add</button>
                 </div>
                 <div class="d-flex todo-container">
-                    <div v-for="(todo, index) in todoList" class="todo" :class="{completed: todo.isCompleted}">
+                    <div v-for="(todo, index) in todoList" class="todo" :class="{completed: todo.isCompleted}" @click="toggleTodo(todo)">
                         {{ todo.text }}
                         <i class="fa-solid fa-xmark" @click="removeTodo(index)"></i>
                     </div>

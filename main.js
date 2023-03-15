@@ -35,6 +35,9 @@ createApp({
 
                 this.newToDoText = ''
             }  
+        },
+         toggleTodo(todo) {
+            return todo.isCompleted ? todo.isCompleted = false : todo.isCompleted = true;
         }
     }
 }).mount('#app')

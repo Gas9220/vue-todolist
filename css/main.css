@@ -47,6 +47,7 @@ div.container ul {
 
 .completed {
     text-decoration: line-through;
+    background-color: gray;
 }
 
 .add {
