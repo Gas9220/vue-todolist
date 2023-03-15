@@ -32,29 +32,28 @@
     <!-- /Header -->
 
     <!-- Main -->
-    <main class="d-flex">
-        <div class="container left">
-            <h3>Lists</h3>
-            <ul>
-                <li class="todo-list">Default</li>
-            </ul>
-        </div>
-        <div class="container right">
-            <h3>My todos</h3>
-            <div class="d-flex todo-container">
-                <div class="todo">
-                    Andare in pizzeria
-                </div>
-                <div class="todo">
-                    Fare la spesa
-                </div>
-                <div class="todo">
-                    Seguire lezione
+    <div id="app">
+        <main class="d-flex">
+            <div class="container left">
+                <h3>Lists</h3>
+                <ul>
+                    <li class="todo-list">Default</li>
+                </ul>
+            </div>
+            <div class="container right">
+                <h3>My todos</h3>
+                <div class="d-flex todo-container">
+                    <div v-for="todo in todoList" class="todo" :class="{completed: todo.isCompleted}">
+                        {{ todo.text }}
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <!-- Main -->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

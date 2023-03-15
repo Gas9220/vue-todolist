@@ -45,6 +45,10 @@ div.container ul {
     border-radius: .625rem;
 }
 
+.completed {
+    text-decoration: line-through;
+}
+
 @media screen and (min-width: 600px) {
     .left {
         width: 15%;
